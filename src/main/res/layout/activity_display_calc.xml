@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_calc"
+    tools:context="kat.hw2.DisplayCalcActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp">
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="#"
+        android:ems="10"
+        android:id="@+id/num1" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/num1"
+        android:id="@+id/num2"
+        android:text="#" />
+
+    <Button
+        android:text=" = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num2"
+        android:id="@+id/equals"
+        android:onClick="calculate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/result"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:autoText="false"
+        android:editable="false"
+        android:enabled="true" />
+
+</LinearLayout>
